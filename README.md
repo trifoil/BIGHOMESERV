@@ -21,6 +21,10 @@ Most of this tutorial comes from the official website : https://www.truenas.com/
 
 This tutorial describes the web interface configuration
 
+### Dashboard
+
+![Alt text](image.png)
+
 ## Disk Management and RAID Configuration <a name="disk-management"></a>
 
 TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, it bears the name of RAID-Z.
@@ -61,7 +65,6 @@ TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, 
     * You can mix and match different types of vdevs in a pool to achieve your desired balance of performance and redundancy.
 
 ### RAID-Z Configuration <a name="raid-configuration"></a>
-
 
 My personal configuration is 4 HDDs of 1Tb each.
 
