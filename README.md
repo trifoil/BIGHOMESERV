@@ -29,6 +29,10 @@ Once you are logged in, you can see the dashboard. Wdgets can be reorganized by 
 
 ![Alt text](image.png)
 
+After shutting down or during a reboot, the webUI looks like this :
+
+![Alt text](image-1.png)
+
 ## Disk Management and RAID Configuration <a name="disk-management"></a>
 
 TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, it bears the name of RAID-Z.
