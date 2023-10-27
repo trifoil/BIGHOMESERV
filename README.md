@@ -1,4 +1,4 @@
-# BIGHOMESERV
+# BIGHOMESERV -> 🖥
 
 ## Table of Contents
 1. [Installation of TrueNAS Scale](#installation)
