@@ -4,6 +4,8 @@ Homeserv's big brother. Aimed at helping you to set up your infrastructure very 
 
 Most of this tutorial comes from the official website : https://www.truenas.com/docs/scale/22.12/scaletutorials/toptoolbar/
 
+For information, I use Fedora Linux 38 (Workstation Edition).
+
 ## Table of Contents
 1. [Installation of TrueNAS Scale](#installation)
 2. [Disk Management and RAID Configuration](#disk-management)
@@ -22,6 +24,8 @@ Most of this tutorial comes from the official website : https://www.truenas.com/
 This tutorial describes the web interface configuration
 
 ### Dashboard
+
+Once you are logged in, you can see the dashboard. Wdgets can be reorganized by clicking on ```Reoarder``` or ```Configure``` in the top right corner.
 
 ![Alt text](image.png)
 
