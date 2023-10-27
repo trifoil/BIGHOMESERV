@@ -19,7 +19,7 @@ This tutorial describes the web interface configuration
 
 ## Disk Management and RAID Configuration <a name="disk-management"></a>
 
-This section covers the process of managing disks and setting up RAID configurations for TrueNAS Scale. This is crucial for ensuring data redundancy, performance, and storage capacity.
+TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, it bears the name of RAID-Z.
 
 ### Disk Management <a name="disk-management"></a>
 
