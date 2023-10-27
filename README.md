@@ -1,7 +1,69 @@
 # BIGHOMESERV
-Homeserv's big brother
 
-## Test
+## Table of Contents
+1. [Installation of TrueNAS Scale](#installation)
+2. [Disk Management and RAID Configuration](#disk-management)
+   1. [Disk Management](#disk-management)
+   2. [RAID Configuration](#raid-configuration)
+3. [Setting up a VPN with a Domain Name](#vpn-setup)
+   1. [Domain Name Registration (e.g., using Infomaniak)](#domain-registration)
+   2. [VPN Configuration](#vpn-configuration)
+4. [DNS Configuration](#dns-configuration)
+5. [User Management](#user-management)
+6. [Installation and Setup of GitLab](#gitlab-setup)
+7. [Conclusion](#conclusion)
+
+## Installation of TrueNAS Scale<a name="installation"></a>
+
+This tutorial describes the web interface configuration
+
+## Disk Management and RAID Configuration<a name="disk-management"></a>
+
+This section covers the process of managing disks and setting up RAID configurations for TrueNAS Scale. This is crucial for ensuring data redundancy, performance, and storage capacity.
+
+### Disk Management<a name="disk-management"></a>
+
+
+
+### RAID Configuration<a name="raid-configuration"></a>
+
+## Setting up a VPN with a Domain Name<a name="vpn-setup"></a>
+
+### Domain Name Registration (e.g., using Infomaniak)<a name="domain-registration"></a>
+
+### VPN Configuration<a name="vpn-configuration"></a>
+
+## DNS Configuration<a name="dns-configuration"></a>
+
+## User Management<a name="user-management"></a>
+
+## Installation and Setup of GitLab<a name="gitlab-setup"></a>
+
+## Conclusion<a name="conclusion"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 RAID 0 (Striping):
 RAID 0 combines two or more HDDs into a single volume, distributing data across them. It offers improved performance but provides no data redundancy or fault tolerance. If one drive fails, all data is lost.
