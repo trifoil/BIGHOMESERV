@@ -1,5 +1,9 @@
 # BIGHOMESERV 🖥
 
+Homeserv's big brother. Aimed at helping you to set up your infrastructure very easily.
+
+Most of this tutorial comes from the official website : https://www.truenas.com/docs/scale/22.12/scaletutorials/toptoolbar/
+
 ## Table of Contents
 1. [Installation of TrueNAS Scale](#installation)
 2. [Disk Management and RAID Configuration](#disk-management)
@@ -25,7 +29,7 @@ TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, 
 
 
 
-### RAID-Z Configuration <a name="raid-configuration"></a>
+### RAID-Z Configuration <a name="raid-z"></a>
 
 * RAID-Z1 (Single Parity, similar to RAID 5):
 
@@ -56,12 +60,16 @@ TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, 
 
     * You can mix and match different types of vdevs in a pool to achieve your desired balance of performance and redundancy.
 
+### RAID-Z Configuration <a name="raid-configuration"></a>
+
+
 My personal configuration is 4 HDDs of 1Tb each.
 
 I will use RAID-Z1 to have a good balance between redundancy and speed :
 
 * 4 x 1Tb HDDs should give me about 3Tb of storage.
 * Up to one disk can fail at a time.
+
 
 
 ## Setting up a VPN with a Domain Name <a name="vpn-setup"></a>
