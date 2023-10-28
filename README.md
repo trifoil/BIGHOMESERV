@@ -1,5 +1,7 @@
 # BIGHOMESERV 🖥
 
+TrueNAS scale tutorial for beginners.
+
 Homeserv's big brother. Aimed at helping you to set up your infrastructure very easily.
 
 Most of this tutorial comes from the official website : https://www.truenas.com/docs/scale/22.12/scaletutorials/toptoolbar/
@@ -20,6 +22,8 @@ For information, I use Fedora Linux 38 (Workstation Edition).
 7. [Conclusion](#conclusion)
 
 ## Installation of TrueNAS Scale <a name="installation"></a>
+
+⚠️ Make sure to disable any RAID integrated controller before installing ⚠️
 
 This tutorial describes the web interface configuration
 
