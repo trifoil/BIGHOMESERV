@@ -9,6 +9,9 @@ Most of this tutorial comes from the official website : https://www.truenas.com/
 For information, I use Fedora Linux 38 (Workstation Edition).
 
 ## Table of Contents
+
+<!-- TOC -->
+
 - [BIGHOMESERV 🖥](#bighomeserv-)
   - [Table of Contents](#table-of-contents)
   - [Pre-installation considerations ](#pre-installation-considerations-)
@@ -25,6 +28,8 @@ For information, I use Fedora Linux 38 (Workstation Edition).
   - [User Management ](#user-management-)
   - [Installation and Setup of GitLab ](#installation-and-setup-of-gitlab-)
   - [Conclusion ](#conclusion-)
+
+<!-- /TOC -->
 
 ## Pre-installation considerations <a name="considerations"></a>
 
