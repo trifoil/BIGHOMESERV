@@ -9,27 +9,18 @@ Most of this tutorial comes from the official website : https://www.truenas.com/
 For information, I use Fedora Linux 38 (Workstation Edition).
 
 ## Table of Contents
-
-<!-- TOC -->
-
-- [BIGHOMESERV 🖥](#bighomeserv-)
-  - [Table of Contents](#table-of-contents)
-  - [Pre-installation considerations ](#pre-installation-considerations-)
-  - [Installation of TrueNAS Scale ](#installation-of-truenas-scale-)
-    - [Dashboard](#dashboard)
-  - [Disk Management and RAID Configuration ](#disk-management-and-raid-configuration-)
-    - [Disk Management ](#disk-management-)
-    - [RAID-Z Configuration ](#raid-z-configuration-)
-    - [RAID-Z Configuration ](#raid-z-configuration--1)
-  - [Setting up a VPN with a Domain Name ](#setting-up-a-vpn-with-a-domain-name-)
-    - [Domain Name Registration (e.g., using Infomaniak) ](#domain-name-registration-eg-using-infomaniak-)
-    - [VPN Configuration ](#vpn-configuration-)
-  - [DNS Configuration ](#dns-configuration-)
-  - [User Management ](#user-management-)
-  - [Installation and Setup of GitLab ](#installation-and-setup-of-gitlab-)
-  - [Conclusion ](#conclusion-)
-
-<!-- /TOC -->
+1. [Considerations](#considerations)
+1. [Installation of TrueNAS Scale](#installation)
+2. [Disk Management and RAID Configuration](#disk-management)
+   1. [Disk Management](#disk-management)
+   2. [RAID Configuration](#raid-configuration)
+3. [Setting up a VPN with a Domain Name](#vpn-setup)
+   1. [Domain Name Registration (e.g., using Infomaniak)](#domain-registration)
+   2. [VPN Configuration](#vpn-configuration)
+4. [DNS Configuration](#dns-configuration)
+5. [User Management](#user-management)
+6. [Installation and Setup of GitLab](#gitlab-setup)
+7. [Conclusion](#conclusion)
 
 ## Pre-installation considerations <a name="considerations"></a>
 
