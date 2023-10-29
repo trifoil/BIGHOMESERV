@@ -9,21 +9,33 @@ Most of this tutorial comes from the official website : https://www.truenas.com/
 For information, I use Fedora Linux 38 (Workstation Edition).
 
 ## Table of Contents
-1. [Installation of TrueNAS Scale](#installation)
-2. [Disk Management and RAID Configuration](#disk-management)
-   1. [Disk Management](#disk-management)
-   2. [RAID Configuration](#raid-configuration)
-3. [Setting up a VPN with a Domain Name](#vpn-setup)
-   1. [Domain Name Registration (e.g., using Infomaniak)](#domain-registration)
-   2. [VPN Configuration](#vpn-configuration)
-4. [DNS Configuration](#dns-configuration)
-5. [User Management](#user-management)
-6. [Installation and Setup of GitLab](#gitlab-setup)
-7. [Conclusion](#conclusion)
+- [BIGHOMESERV 🖥](#bighomeserv-)
+  - [Table of Contents](#table-of-contents)
+  - [Pre-installation considerations ](#pre-installation-considerations-)
+  - [Installation of TrueNAS Scale ](#installation-of-truenas-scale-)
+    - [Dashboard](#dashboard)
+  - [Disk Management and RAID Configuration ](#disk-management-and-raid-configuration-)
+    - [Disk Management ](#disk-management-)
+    - [RAID-Z Configuration ](#raid-z-configuration-)
+    - [RAID-Z Configuration ](#raid-z-configuration--1)
+  - [Setting up a VPN with a Domain Name ](#setting-up-a-vpn-with-a-domain-name-)
+    - [Domain Name Registration (e.g., using Infomaniak) ](#domain-name-registration-eg-using-infomaniak-)
+    - [VPN Configuration ](#vpn-configuration-)
+  - [DNS Configuration ](#dns-configuration-)
+  - [User Management ](#user-management-)
+  - [Installation and Setup of GitLab ](#installation-and-setup-of-gitlab-)
+  - [Conclusion ](#conclusion-)
+
+## Pre-installation considerations <a name="considerations"></a>
+
+From a persona experience with a DELL POWEREDGE R720.
+
+* First of all, do not modify anything about the iDRAC if it is not needed, my iDRAC got broken because of an update
+* My R720 comes with a raid controller, so, I had to create virtual disks using RAID 0 on every disk that is installed, or they weren't displayed. It is dumb, but it works like this.
+
+⚠️ Do not set up any RAID config, TrueNAS uses ZFS and hence RAID-Z (and it is automatic) ⚠️
 
 ## Installation of TrueNAS Scale <a name="installation"></a>
-
-⚠️ Make sure to disable any RAID integrated controller before installing ⚠️
 
 This tutorial describes the web interface configuration
 
