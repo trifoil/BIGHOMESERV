@@ -33,7 +33,15 @@ From a persona experience with a DELL POWEREDGE R720.
 
 ## Installation of TrueNAS Scale <a name="installation"></a>
 
-This tutorial describes the web interface configuration
+### Bootable media
+
+### GUI ntallation
+
+It is more convenient to use the web UI to configure the server, so the web configuration is selected :
+
+### Initial login
+
+![Alt text](<Screenshot from 2023-10-29 21-02-01.png>)
 
 ### Dashboard
 
@@ -117,11 +125,23 @@ I will use RAID-Z1 to have a good balance between redundancy and speed :
 
 
 
+## Notes
+
+1) a faire absolument wireguard et HAPROXY(virtualié car docker est dur à setup)
 
 
 
+1) Haproxy ou Nginx
+    * Reverse proxy
+        Peut anonymiser un réseau
+    * Load balancing    
+        Ce domaine là va à cette machine
 
+2) Regles de firewall 
 
+PFSENSE
+
+![Alt text](image-2.png)
 
 
 
