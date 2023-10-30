@@ -129,6 +129,10 @@ I will use RAID-Z1 to have a good balance between redundancy and speed :
 
 1) a faire absolument wireguard et HAPROXY(virtualié car docker est dur à setup)
 
+Namecheap
+
+Faire des dmz (zones demilitarisées aka vlan ou le trafic ne peut que sortir)
+
 
 
 1) Haproxy ou Nginx
