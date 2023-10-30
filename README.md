@@ -35,7 +35,29 @@ From a persona experience with a DELL POWEREDGE R720.
 
 ### Bootable media
 
-### GUI ntallation
+Crate a bootable media with the TrueNAS Scale ISO with :
+* Balenaetcher
+* Rufus
+* Fedora Mediawriter
+* Other
+
+### Graphical Install
+
+Select Install :
+
+![Alt text](image-3.png)
+
+Select the primary drive (used for the OS) :
+
+![Alt text](image-4.png)
+
+It will warn you everything on te drive will be erased, just say OK :
+
+![Alt text](image-5.png)
+
+It then asks which UI is wanted. Web UI is the simplest :
+
+![Alt text](image-6.png)
 
 It is more convenient to use the web UI to configure the server, so the web configuration is selected :
 
