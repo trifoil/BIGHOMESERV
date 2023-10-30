@@ -59,15 +59,29 @@ It then asks which UI is wanted. Web UI is the simplest :
 
 ![Alt text](image-6.png)
 
+If your system is bios-based, select no :
+
+![Alt text](image-7.png)
+
+Once the installation is complete, this prompt appears :
+
+![](image-8.png)
+
+It only has to be rebooted (either 3 or 4) :
+
+![Alt text](image-9.png)
+
 It is more convenient to use the web UI to configure the server, so the web configuration is selected :
 
 ### Initial login
+
+Log in as Admin and select a strong password :
 
 ![Alt text](<Screenshot from 2023-10-29 21-02-01.png>)
 
 ### Dashboard
 
-Once you are logged in, you can see the dashboard. Wdgets can be reorganized by clicking on ```Reoarder``` or ```Configure``` in the top right corner.
+Once you are logged in, you can see the dashboard. Wdgets can be reorganized by clicking on ```Reorder``` or ```Configure``` in the top right corner.
 
 ![Alt text](image.png)
 
