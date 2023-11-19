@@ -77,9 +77,7 @@ It is more convenient to use the web UI to configure the server, so the web conf
 
 Log in as Admin and select a strong password :
 
-<img src="Screenshot from 2023-10-29 21-02-01.png" width="1000">
-
-![Alt text](<Screenshot from 2023-10-29 21-02-01.png> | width=100)
+<img src="Screenshot from 2023-10-29 21-02-01.png" width="700">
 
 ### Dashboard
 
@@ -96,8 +94,6 @@ After shutting down or during a reboot, the webUI looks like this :
 TrueNAS uses ZFS filesystem, so even if the concepts are still similar to RAID, it bears the name of RAID-Z.
 
 ### Disk Management <a name="disk-management"></a>
-
-
 
 ### RAID-Z Configuration <a name="raid-z"></a>
 
@@ -147,6 +143,18 @@ I will use RAID-Z1 to have a good balance between redundancy and speed :
 
 ### VPN Configuration <a name="vpn-configuration"></a>
 
+1)  Without hostname
+
+    * Configure the server side
+
+    * configure the client side
+
+        
+
+2)  With hostname
+
+## With hostname
+
 ## DNS Configuration <a name="dns-configuration"></a>
 
 ## User Management <a name="user-management"></a>
@@ -185,8 +193,13 @@ PFSENSE
 
 ![Alt text](image-2.png)
 
+## Sources
 
+* VPN client config :
 
+    https://forum.manjaro.org/t/how-to-configure-wireguard-via-the-networkmanager-gui-advanced-network-manager/138040
+
+* 
 
 
 
