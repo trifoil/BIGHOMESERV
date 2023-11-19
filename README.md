@@ -77,7 +77,7 @@ It is more convenient to use the web UI to configure the server, so the web conf
 
 Log in as Admin and select a strong password :
 
-![Alt text](<Screenshot from 2023-10-29 21-02-01.png>)
+![Alt text](<Screenshot from 2023-10-29 21-02-01.png> | width=100)
 
 ### Dashboard
 
