@@ -64,7 +64,7 @@ If your system is bios-based, select no :
 ![Alt text](image-7.png)
 
 Once the installation is complete, this prompt appears :
-
+<>
 ![](image-8.png)
 
 It only has to be rebooted (either 3 or 4) :
