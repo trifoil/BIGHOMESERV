@@ -73,13 +73,40 @@ Then connect through cockpit to your server.
 
    It should look like this :
 
-   ![Alt text](image-10.png)
-
-
+   ```
+   [root@localhost cockpit]# nano /etc/sysctl.d/99-custom.conf
+   [root@localhost cockpit]# sysctl -p /etc/sysctl.d/99-custom.conf 
+   net.ipv4.ip_forward = 1
+   [root@localhost cockpit]#
+   ```
 
 4) Reboot
 
-Sources :
+   ```
+   reboot
+   ```
+
+   🗈 Note : You might need to restart the server violently through truenas to access cockpit. At least it happened to me.
+
+5) Generate the keys
+
+   ```
+   wg genkey | tee /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
+   ```
+
+   The output should look like 
+
+   ```
+   7aBRBnT32R+8f04Ug9IruGWzGSaN9+g0riprzaT4HS0=
+   ```
+
+6) Create a new configuration file 
+
+   ```
+   nano /etc/wireguard/wg0.conf
+   ```
+
+Sources : 
 
 https://nerdonthestreet.com/wiki?find=Set+Up+a+WireGuard+VPN+Server+with+WebSocket+Tunneling
 
