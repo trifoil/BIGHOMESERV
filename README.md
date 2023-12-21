@@ -22,8 +22,8 @@ For information, I use Fedora Linux 38 (Workstation Edition).
 5. [User Management](#user-management)
 6. [Installation and Setup of GitLab](#gitlab-setup)
 7. [Conclusion](#conclusion)
-8. [Sources]
-9. []
+8. [Sources](#)
+
 
 
 By the time I got my first server up and running, I started computing school, and the school firewall blocks wireguard (here, wg-easy).
@@ -32,30 +32,56 @@ The method used by Nerd on the Street is using tls tunnelling to hide the vpn.
 
 Here are the steps I had to do to set it up :
 
-1) Install Debian 
+1) Install Fedora 
 
-Install Debian with docker on your Truenas machine. It's quite simple because the name of the image you pull is debian.
+Install Fedora Server in a VM on your Truenas machine.
 
-Then connect through ssh to your container.
+I enable the root account over cockpit by going in 
+
+```
+nano /etc/cockpit/disallowed-users
+```
+
+and commenting the line written "root".
+
+Then connect through cockpit to your server.
 
 2) Wireguard install
 
-First, install wireguard
+   First, install wireguard
 
-```
-apt install wireguard
-```
-Then we can look at the Kernel version, but the one we pulled is supposedly generig and hence you don't need another one.
+   ```
+   dnf install wireguard-tools -y
+   ```
 
-```
-uname -r
-```
 3) Enable IPv4 forwarding
 
-```
+   ```
+   nano /etc/sysctl.d/99-custom.conf
+   ```
 
-```
+   Add the following line
+
+   ```
+   net.ipv4.ip_forward=1
+   ```
+   After saving, apply the configuration with :
+
+   ```
+   sysctl -p /etc/sysctl.d/99-custom.conf
+   ```
+
+   It should look like this :
+
+   ![Alt text](image-10.png)
+
+
+
+4) Reboot
 
 Sources :
 
 https://nerdonthestreet.com/wiki?find=Set+Up+a+WireGuard+VPN+Server+with+WebSocket+Tunneling
+
+https://www.atlantic.net/dedicated-server-hosting/how-to-install-and-configure-wireguard-vpn-server-on-fedora/
+
